@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="eService_Database_type" max_length="40" name="x_58872_needit_eservice_database_type" type="collection">
+        <element attributes="import_attribute_name=alternate_order_nbr" label="alternate_order_nbr" mandatory="true" max_length="40" name="u_alternate_order_nbr" type="integer"/>
+        <element attributes="import_attribute_name=created_by,edge_encryption_enabled=true" dependent="u_created_by" dependent_on_field="u_created_by" label="created_by" max_length="40" name="u_created_by" read_only="true" reference="sys_user" type="reference" use_dependent_field="true"/>
+        <element attributes="import_attribute_name=creation_date" label="creation_date" max_length="40" name="u_creation_date" read_only="true" type="glide_date_time"/>
+        <element attributes="import_attribute_name=database_cd,edge_encryption_enabled=true" label="database_cd" mandatory="true" max_length="40" name="u_database_cd" type="string"/>
+        <element attributes="import_attribute_name=database_id" label="database_id" mandatory="true" max_length="40" name="u_database_id" type="integer"/>
+        <element attributes="import_attribute_name=database_nm,edge_encryption_enabled=true" label="database_nm" mandatory="true" max_length="40" name="u_database_nm" type="string"/>
+        <element attributes="import_attribute_name=end_dt,edge_encryption_enabled=true" label="end_dt" max_length="40" name="u_end_dt" type="glide_date"/>
+        <element attributes="import_attribute_name=last_updated_by,edge_encryption_enabled=true" label="last_updated_by" max_length="40" name="u_last_updated_by" reference="sys_user" type="reference"/>
+        <element attributes="import_attribute_name=last_update_date" label="last_update_date" max_length="40" name="u_last_update_date" read_only="true" type="glide_date_time"/>
+        <element attributes="import_attribute_name=start_dt" label="start_dt" mandatory="true" max_length="40" name="u_start_dt" type="glide_date"/>
+    </element>
+</database>
